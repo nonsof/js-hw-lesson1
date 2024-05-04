@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Привет, пользователь!</title>
+<script>
+    function greetUser() {
+        // Запрашиваем имя пользователя
+        var userName = prompt("Пожалуйста, введите ваше имя:");
+
+        // Проверяем, было ли введено имя
+        if (userName) {
+            // Выводим приветствие с именем пользователя
+            alert("Привет, " + userName + "!");
+        } else {
+            // Если имя не было введено, выводим сообщение об ошибке
+            alert("Имя не было введено.");
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>Привет, пользователь!</h1>
+    <button onclick="greetUser()">Нажмите для ввода имени</button>
+</body>
+</html>
